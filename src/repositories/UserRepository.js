@@ -19,7 +19,7 @@ export default class UserRepository {
   static async update(criteria, input) {
     const result = await DB.pg.users.update(criteria, input);
     return result;
-  }
+  }       
 
   static async getUserProfileData(userId) {
     const result = await DB.pg.users.findOne(
